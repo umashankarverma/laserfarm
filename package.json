@@ -1,0 +1,56 @@
+{
+  "name": "aemm",
+  "version": "1.0.5-dev",
+  "description": "Command line utility for building AEMM apps",
+  "scripts": {
+    "test": "npm run jshint && npm run jasmine",
+    "jshint": "node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint spec",
+    "jasmine": "node node_modules/jasmine-node/bin/jasmine-node --captureExceptions --color spec"
+  },
+  "author": "Adobe",
+  "preferGlobal": true,
+  "license": "Apache-2.0",
+  "bin": {
+    "aemm": "./bin/aemm.js"
+  },
+  "dependencies": {
+    "bplist": "0.0.4",
+    "child-process-promise": "^1.1.0",
+    "connect-aemmobile": "^0.1.0",
+    "continuation-local-storage": "^3.1.6",
+    "cordova-common": "^1.1.1",
+    "cordova-lib": "^6.0.0",
+    "cross-spawn-async": "^2.1.9",
+    "decompress-zip": "^0.2.0",
+    "ini": "^1.3.4",
+    "ios-sim": "5.0.8",
+    "jsonfile": "^2.2.3",
+    "lodash": "^4.6.1",
+    "mkdirp": "^0.5.1",
+    "nopt": "^3.0.6",
+    "plist": "^1.2.0",
+    "q": "^1.4.1",
+    "q-io": "^1.13.2",
+    "request": "^2.67.0",
+    "request-promise": "^1.0.2",
+    "semver": "^5.1.0",
+    "shelljs": "^0.6.0",
+    "simple-spinner": "0.0.5"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5",
+    "jshint": "^2.9.2"
+  },
+  "engines": {
+    "node": ">=4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobe-marketing-cloud-mobile/aemmobile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adobe-marketing-cloud-mobile/aemmobile/issues"
+  },
+  "homepage": "https://github.com/adobe-marketing-cloud-mobile/aemmobile#readme",
+  "main": "aemm"
+}
