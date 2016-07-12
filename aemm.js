@@ -14,4 +14,4 @@
 	limitations under the License.
  */
 
-module.exports.cli = require('./src/aemm-cli.js');
+module.exports.cli = require('../src/aemm-cli.js');
